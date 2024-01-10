@@ -9,24 +9,27 @@ This can quickly get you running the LLm on your local HW.
 >Python code to write data to postgresql database
 
 **Answer:**
-> # Import required modules
-> import psycopg2
-> from psycopg2 import sql
-> # Connect to your postgres DB
-> conn = psycopg2.connect(dbname='testDB', user='testUser', password='password', host='localhost')
-> # Create a cursor object using the cursor() method
-> cur = conn.cursor()
-> # Execute a query
-> cur.execute("INSERT INTO test_table (column1, column2) VALUES (%s, %s)", ('value1','value2'))
-> conn.commit() # Commit your changes in the database
-> # Fetch all rows using fetchall() method
-> rows = cur.fetchall()
-> for row in rows:
->     print("ID = ", row[0])
->     print("COLUMN1 = ", row[1], "\n")
-> # Close communication with the database server
-> cur.close()
-> conn.close()
+
+```
+# Import required modules
+import psycopg2
+from psycopg2 import sql
+# Connect to your postgres DB
+conn = psycopg2.connect(dbname='testDB', user='testUser', password='password', host='localhost')
+# Create a cursor object using the cursor() method
+cur = conn.cursor()
+# Execute a query
+cur.execute("INSERT INTO test_table (column1, column2) VALUES (%s, %s)", ('value1','value2'))
+conn.commit() # Commit your changes in the database
+# Fetch all rows using fetchall() method
+rows = cur.fetchall()
+for row in rows:
+    print("ID = ", row[0])
+    print("COLUMN1 = ", row[1], "\n")
+# Close communication with the database server
+cur.close()
+conn.close()
+```
 
 # Steps.
 

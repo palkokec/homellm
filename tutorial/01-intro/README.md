@@ -1,12 +1,12 @@
-# Lesson Goal
-Prepare your environment to be able to run LLM use cases.
+This is just a short introduction to tutorial series.
+It should provide you an overview of tooling used in tutorials.
 
 # Rather long intro
 **Prompt:**
 > please write an introductory paragraph in md notation about intention to write tutorial series on usage of opensource LLM at home on low resources hardware. The paragraph should be max 500 words long.
 
 **Answer:**
-Welcome to the exciting world of open-source language models (LLMs) and the upcoming tutorial series that aims to empower you to harness the capabilities of these advanced language models on low-resource hardware in the comfort of your home. As technology continues to advance, the accessibility of powerful language models has become a reality, opening up new possibilities for natural language understanding and generation. However, many individuals may be limited by hardware constraints, preventing them from fully experiencing the potential of these models. This tutorial series is designed to bridge that gap by providing step-by-step guidance on setting up and utilizing open-source LLMs efficiently on low-resource devices. Whether you're a student, hobbyist, or simply curious about the capabilities of language models, this series will cater to your needs, ensuring that you can explore and leverage the potential of open-source LLMs without the need for high-end hardware. Get ready to embark on a journey that will demystify the process of working with language models, enabling you to tap into their power and applications within the confines of your home and modest computing resources. Let's unlock the full potential of open-source LLMs and make the most of what they have to offer in your everyday computing endeavors!
+> Welcome to the exciting world of open-source language models (LLMs) and the upcoming tutorial series that aims to empower you to harness the capabilities of these advanced language models on low-resource hardware in the comfort of your home. As technology continues to advance, the accessibility of powerful language models has become a reality, opening up new possibilities for natural language understanding and generation. However, many individuals may be limited by hardware constraints, preventing them from fully experiencing the potential of these models. This tutorial series is designed to bridge that gap by providing step-by-step guidance on setting up and utilizing open-source LLMs efficiently on low-resource devices. Whether you're a student, hobbyist, or simply curious about the capabilities of language models, this series will cater to your needs, ensuring that you can explore and leverage the potential of open-source LLMs without the need for high-end hardware. Get ready to embark on a journey that will demystify the process of working with language models, enabling you to tap into their power and applications within the confines of your home and modest computing resources. Let's unlock the full potential of open-source LLMs and make the most of what they have to offer in your everyday computing endeavors!
 
 This is just one of the examples, how LLM can help you and most probably you are using some service like [ChatGPT](https://chat.openai.com) already. But what if you do not want to share your data with external services, pay other providers, or simply get to more complex use cases and have more control over LLM.
 
@@ -16,10 +16,10 @@ This tutorial series will try to guide you through some approaches how to use LL
 
 All the code was executed and succesfully run on my home personal computer (5+ years old):
 
-**Processor:** Intel® Core™ i7-4790 CPU @ 3.60GHz × 8 
-**RAM:** 16G
-**GPU:** integrated Mesa Intel® HD Graphics 4600 (HSW GT2)
-**OS:** Debian 12
+* **Processor:** Intel® Core™ i7-4790 CPU @ 3.60GHz × 8 
+* **RAM:** 16G
+* **GPU:** integrated Mesa Intel® HD Graphics 4600 (HSW GT2)
+* **OS:** Debian 12
 
 There are variety of tools which can be used for work with LLM models, but this tutorial will focus on the toolset I found proven to work reliably on the low resource HW.
 
