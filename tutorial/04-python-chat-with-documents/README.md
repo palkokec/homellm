@@ -5,7 +5,7 @@ In this example we will use in memory ChromaDB to store the embeddings. In the l
 Based on the n_ctx parameter for llama.cpp and size of your document this might take couple of minutes on your hardware. Be patient :).
 
 # Code process flow
-
+```
 /*
 +---------------------+
 | init embeddings     |
@@ -83,7 +83,7 @@ Based on the n_ctx parameter for llama.cpp and size of your document this might 
 | +-----------------+ |
 +-----------+---------+
  */
- 
+ ```
 # Deployment Steps
 
 Create virtual python environment in current folder (.) or specify directory name instead of .

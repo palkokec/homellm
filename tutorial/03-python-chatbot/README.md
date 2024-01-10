@@ -3,7 +3,7 @@ In this example we are building simple chatbot based on python langchain, llamac
 Chainlit provides ChatGPT like web user interface to interact with LLM.
 
 # Code process flow
-
+```
 /*
 +--------------------+
 |Initialize LLM with |
@@ -57,6 +57,7 @@ Chainlit provides ChatGPT like web user interface to interact with LLM.
 | +-----------------+ |
 +-----------+---------+
  */
+ ```
  
 # Deployment Steps
 
