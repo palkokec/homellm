@@ -10,13 +10,15 @@ Each folder in tutorial section contains **Readme.md** file with further informa
 
 ### Env setup
 
+```
 python3 -m venv .
 . ./bin/activate
 python3 -m pip install -r requirements.txt
+```
 
 ### Metadata store
 Using postgres pgvector to store tika metadata and chromadb for embeddings
-
+```
 docker build --build-arg PG_MAJOR=15 -t homellm/pgvector -f Dockerfile-pgvector .
 docker run -d \
 --name homellm-postgres \
@@ -25,10 +27,12 @@ docker run -d \
 -v /home/pali/workspace/data/pgdata:/var/lib/postgresql/data \
 -p 5432:5432 \
 homellm/pgvector
-
+```
 #### Meta database
+```
 python3 src/db_init.py 
-
+```
+```
 psql -U postgres postgres 
 DROP DATABASE IF EXISTS homellm;
 CREATE DATABASE homellm LOCALE 'en_US.utf8' OWNER postgres;
@@ -46,7 +50,8 @@ CREATE TABLE files
   stat_metadata JSON,
   language VARCHAR(10) NOT NULL
 );  
-
+```
+```
 docker pull chromadb/chroma
 docker run -d \
 --name homellm-chroma \
@@ -54,3 +59,4 @@ docker run -d \
 -v /home/pali/workspace/data/chroma:/chroma/chroma/ \
 -p 8000:8000 \
 chromadb/chroma
+```
